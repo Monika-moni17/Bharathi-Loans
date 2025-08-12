@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repay</title>
+  <!-- Font Awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="repay.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar" id="navbar">
+    <div class="logo">Bharathi Loans</div>
+    <div class="nav-items">
+      <a href="about.html">About Us</a>
+      <a href="repay.html">Repay Loan</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="index.html" class="home-icon-link">
+        <i class="fas fa-house home-icon"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+<div class="hero">
+    <h1>Repay Loan</h1>
+</div>
+
+<!-- Form Section -->
+<div class="form-section">
+    <p style="color: red;">Please be sure to verify the accuracy of the below information before making any transfer.
+         If you require any further assistance, please reach out to care@bharatloan.com.</p>
+    <p>Please login with your PAN and OTP to repay your loan.</p>
+</div>
+
+<div class="pan-input-container">
+    <i class="fas fa-id-card icon-left"></i>
+    <input type="text" placeholder="Enter Your PAN*" class="pan-input">
+    <br>
+    <button class="otp-btn">Get OTP</button>
+</div>
+
+<!-- footer section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Left side -->
+        <div class="footer-left">
+            <h2>Bharathi Loans</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Middle links -->
+        <div class="footer-links">
+            <ul>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> News</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> How it Works</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Rate and Terms</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Repay Loan</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> FAQ's</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Terms and Conditions</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Service Area</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Affiliate Program</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Digital Partners</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact info -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 3rd Floor, Plot no 68, Okhla Phase 3 Road,<br> New Delhi, South East Delhi, Delhi, 110020</p>
+            <p><i class="fas fa-phone"></i> +91-8282824-644</p>
+            <p><i class="fas fa-envelope"></i> care@bharatloan.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 BHARAT LOAN. All Rights Reserved</p>
+    </div>
+</footer> 
+
+<marquee class="marquee">"Beaware of fraud! Always use our secure repayment website link for loan payments. Do not make direct bank payments. BharathiLoans is not responsible for payments made to other accounts.</marquee>
+
+  <script>
+    // navbar scrolled logic
+   window.addEventListener("scroll", function () {
+   const navbar = document.getElementById("navbar");
+   if(window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+   } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+  </script>
+
+</body>
+</html>  

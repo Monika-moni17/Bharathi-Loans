@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharathi Loans</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <style>
+  .contact-section {
+    margin-top: 1px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .contact-section h3 {
+    margin-bottom: 15px;
+    color: #003366;
+  }
+
+  .contact-section li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #0057B8;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .contact-icon {
+    background-color: #003366;
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 12px;
+    transition: transform 0.3s;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  @media(max-width: 600px) {
+    .contact-section {
+      padding: 10px;
+    }
+
+    .contact-section li {
+      font-size: 14px;
+    }
+    .contact-icon h3 {
+      font-size: 20px;
+    }
+
+    .contact-icon {
+      width: 28px;
+      height: 28px;
+      font-size: 16px;
+    }
+  }
+</style>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h2 class="logo" id="logo">Bharathi Loans</h2>
+    <nav id="nav-links" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="repay.html">Repay Loan</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Carousel -->
+  <section class="carousel">
+        <div class="carousel-overlay"></div>
+            <div class="overlay-text">
+                <p>We Are BharathiLoans</p> 
+                <h1>When All The Doors Are Closed,<br>You Will Find Ours Open</h1>
+                <a href="apply.html" class="apply-btn">Apply Now</a>              
+            </div>
+  </section>
+
+  <!-- 3 Step Process Section -->
+<section class="steps-section">
+  <h2>Our Streamlined 3-Step Application Process</h2>
+  <h3>BharathiLoans make this process easier,faster and safer for you in every possible way!</h3>
+  <hr class="white-line" />
+
+  <div class="steps-container">
+    <!-- Step 1  -->
+    <div class="step-box">
+      <div class="step-icon"><img src="pen.png" style="height: 70px;"/></div>
+      <h3>Fill in Basic Details</h3>
+      <p>Getting started with BharathiLoans is easy. Simply download our quick loan app and fill in the basic details. whether you are looking for a personal instant loan online or a quick money loan, this first step is straightforward.</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-box">
+      <div class="step-icon"><img src="verify.png" style="height: 70px;"/></div>
+      <h3>Submit Documents for Verification</h3>
+      <p>We make documentation as simple as possible. You can submit your documents online without hassle.For those needing a quick loan application, we accept digital copies of basic identification and financial records. Whether it is an urgent loan application or an online loan best app you are after, the process is smooth.</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step-box">
+      <div class="step-icon"><img src="fund.png" style="height: 80px;"/></div>
+      <h3>Receive Funds Instantly</h3>
+      <p>Once your details are verified, the funds are transferred to your account. With BharathiLoans, you can get instant personal loan online without the usual delays. Our fast instant loan app ensures you receive the money when you need it most.</p>
+    </div>
+  </div>
+</section>
+
+<section class="loan-calculator-section">
+  <!-- Heading -->
+  <div class="calculator-heading">
+    <h2>Personal Loan Calculator</h2>
+    <hr class="heading-line">
+  </div>
+
+  <!-- Two Column Layout -->
+  <div class="calculator-container">
+
+    <!-- Left: Calculator -->
+    <div class="calculator-box">
+      <div class="slider-group">
+        <label for="amount">Amount: ₹<span id="amountValue">0</span></label>
+        <input type="range" id="amount" min="5000" max="100000" value="5000" step="1000">
+        <div class="range-values">
+          <span>₹5K</span><span>₹1L</span>
+        </div>
+      </div>
+
+      <div class="slider-group">
+        <label for="interest">Interest Rate: <span id="interestValue">0%</span></label>
+        <input type="range" id="interest" min="1" max="20" value="1" step="1">
+        <div class="range-values">
+          <span>1%</span><span>20%</span>
+        </div>
+      </div>
+
+      <div class="slider-group">
+        <label for="period">Period: <span id="periodValue">0 Days</span></label>
+        <input type="range" id="period" min="30" max="180" value="30" step="10">
+        <div class="range-values">
+          <span>30 Days</span><span>180 Days</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="calculator-image">
+      <img src="calculator.png" alt="Calculator Image" />
+    </div>
+
+  </div>
+</section>
+
+ <!-- why choose us -->
+<section class="steps-section">
+  <h2>Why Choose Us?</h2>
+  <hr class="white-line" />
+
+  <div class="steps-container">
+    <!-- Step 1  -->
+    <div class="step-box">
+      <div class="step-icon"><img src="approval.png" style="height: 80px;"/></div>
+      <h3>Swift Approval</h3>
+      <p>We believe in saving your valuable time and quick money compliance by using our upgraded software. After successfully checking your documents, we approve your loan within minutes and in no time it gets transferred to your account!</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-box">
+      <div class="step-icon"><img src="flexpay.png" style="height: 80px;"/></div>
+      <h3>Flexible Payment Terms</h3>
+      <p>We accept payments through simple flexible methods, be it easy pay or bank transfer. It aims to enhance your lifestyle experience without worrying about the scarcity of funds!</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step-box">
+      <div class="step-icon"><img src="price.png" style="height: 80px;"/></div>
+      <h3>Transparent Pricing</h3>
+      <p>We offer competitive interest rates and APRs that are fair and all costs are truthfully disclosed to the customer. Our policy is to make life fulfilling for you and your family by adding quality time to each and every moment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="steps-section">
+  <h2>Benefits Of choosing BharathiLoans For Instant Funds</h2>
+  <hr class="white-line"/>
+  <div class="steps-container">
+    <!-- box 1  -->
+    <div class="step-box">
+      <div class="step-icon"><img src="approval.png" style="height: 80px;"/></div>
+      <h3>Quick Loans with Low Credit</h3>
+      <p>BharatLoan offers quick loans with low credit score. This, therefore, makes it easier for those who might not have a perfect credit history. It is quite important, especially for newly salaried people who may not have a credit history. So, whether you are looking for emergency loans or a quick cash loan app, our platform provides an accessible solution.</p>
+    </div>
+  
+    <!-- box 2 -->
+     <div class="step-box">
+      <div class="step-icon"><img src="fund.png" style="height: 80px;"/></div>
+      <h3>Instant Cash Loans in 1 Hour with Minimum Documents</h3>
+      <p>Our fast instant loan app allows you to get online loans instant approval with minimal paperwork. It is very important for those people who may have a loved one admitted to a hospital and immediately need a huge amount of money for any operation or other process.</p>
+    </div>
+
+    <!-- box 3-->
+     <div class="step-box">
+      <div class="step-icon"><img src="price.png" style="height: 80px;"/></div>
+      <h3>Emergency Loans for All Needs</h3>
+      <p>From medical loans to travel loans, BharatLoan offers a range of options to suit your needs. Our emergency loan app is designed to provide instant money loan when you need them the most. You can also use our platform for wedding loans, ensuring your special day goes smoothly.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- no money no problem-->
+<section class="steps-section">
+  <h2>No Money? No Problem!</h2>
+  <h3>BharatiLoans is here to help you take away your worries about unexpected sudden budget surges!</h3>
+  <hr class="white-line" />
+
+  <div class="box-container">
+
+    <!-- box 1-->
+     <div class="img-box">
+      <img src="health.png" alt="Health"/>
+      <h3>Health</h3>
+      <p>Any untimely medical bill or emergency can be met with our help. You can take care of your loved ones without any financial fear!</p>
+     </div>
+
+    <!-- box 2--> 
+     <div class="img-box">
+      <img src="wed.png" alt="Wedding"/>
+      <h3>Wedding</h3>
+      <p>Marriage is a lifetime experience. We are determined to make it a memorable one for you by offering our best instant loan service.</p>
+     </div>
+
+    <!-- box 3--> 
+     <div class="img-box">
+      <img src="credit.png" alt="Credit"/>
+      <h3>Credit Card Intrest Payments</h3>
+      <p>It allows you to integrate several high-interest loans you have on your card into one consolidated loan with fixed tenure and interest rates. This way you can pay your monthly payments on time and faster!</p>
+     </div>
+
+    <!-- box 4--> 
+     <div class="img-box">
+      <img src="debit.png" alt="Debit"/>
+      <h3>Debt Consolidation</h3>
+      <p>You can refinance your loan by combining various high-interest paying/loans into one consolidated personal loan. Showing that you can repay your loan on time, can help improve your CIBIL score!</p>
+     </div>
+
+  </div>
+
+</section>
+
+<!-- FAQ Section -->
+
+<section class="faq-section" id="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <hr class="white-line" />
+
+  <div class="faq">
+    <div class="question" onclick="toggleAnswer(this)">
+      <span>What is BharathiLoans and how does it work?</span>
+      <span class="icon">+</span>
+    </div>
+    <div class="answer">BharathiLoans is a financial technology solution from DEVMUNI LEASING & FINANCE LIMITED that enables young salaried individuals to access short-term personal loans using a convenient app.The process is streamlined and requires minimal paperwork, with only a salary slip, bank statement, PAN card, and proof of address needed to be uploaded through the app. The loan disbursal is quick, with the money being transferred to the borrower's bank account in a matter of minutes.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question" onclick="toggleAnswer(this)">
+      <span>What is a Personal Loan?</span>
+      <span class="icon">+</span>
+    </div>
+    <div class="answer">A personal loan is a type of unsecured loan that is typically used for personal expenses, such as unexpected medical bills, home repairs, or other unexpected expenses. Unlike a mortgage or car loan, personal loans do not require collateral, such as a house or car, to secure the loan. Instead, the lender typically evaluates the borrower's creditworthiness and income to determine their ability to repay the loan.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question" onclick="toggleAnswer(this)">
+      <span>Who can apply for a loan with BharatLoan?</span>
+      <span class="icon">+</span>
+    </div>
+    <div class="answer">It is important to note that the requirement for a personal loan can vary based on the lender and the type of loan. The requirements you have mentioned are specific to BharatLoan, and may not apply to other lenders. It's always advisable to check with the lender directly or visit their website to confirm the specific requirements for a personal loan with them.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question" onclick="toggleAnswer(this)">
+      <span>How fast will I get loan?</span>
+      <span class="icon">+</span>
+    </div>
+    <div class="answer">You can expect to receive your loan disbursed in a lightning-fast time, even faster than it takes for a pizza to be delivered to your doorstep, typically within 30 minutes or less!.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question" onclick="toggleAnswer(this)">
+      <span>What are the current offers?</span>
+      <span class="icon">+</span>
+    </div>
+    <div class="answer">In order to provide the best experience to our customers, we occasionally offer special promotions.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question" onclick="toggleAnswer(this)">
+      <span>Can I repay my loan before my due date?</span>
+      <span class="icon">+</span>
+    </div>
+    <div class="answer">Yes, you have the option to repay your loan prior to the due date and avoid accruing additional daily interest.</div>
+  </div>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Left side -->
+        <div class="footer-left">
+            <h2>Bharathi Loans</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Middle links -->
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> News</a></li>
+                <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> How it Works</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Rate and Terms</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a></li>
+            </ul>
+            <ul>
+                <li><a href="repay.html"><i class="fas fa-angle-right"></i> Repay Loan</a></li>
+                <li><a href="#faq-section"><i class="fas fa-angle-right"></i> FAQ's</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Terms and Conditions</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Service Area</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Affiliate Program</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Digital Partners</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact info -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 3rd Floor, Plot no 68, Okhla Phase 3 Road,<br> New Delhi, South East Delhi, Delhi, 110020</p>
+            <p><i class="fas fa-phone"></i> +91-8282824-644</p>
+            <p><i class="fas fa-envelope"></i> care@bharatloan.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 BHARAT LOAN. All Rights Reserved</p>
+    </div>
+</footer>
+
+  <marquee class="marquee">"Beaware of fraud! Always use our secure repayment website link for loan payments. Do not make direct bank payments. BharathiLoans is not responsible for payments made to other accounts.</marquee>
+
+  <script>
+    function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("show");
+}
+
+  const navbar = document.querySelector(".navbar");
+  const logo = document.getElementById("logo");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+
+      logo.style.opacity="1";
+      logo.style.visibility="visible";
+
+      navLinks.forEach(link => link.style.color = "#0057B8");
+    } else {
+      navbar.classList.remove("scrolled");
+
+      logo.style.opacity="1";
+      logo.style.visibility="visible";
+    
+      navLinks.forEach(link => link.style.color = "white");
+    }
+  } );
+
+   // Get sliders and spans
+  const amountSlider = document.getElementById("amount");
+  const interestSlider = document.getElementById("interest");
+  const periodSlider = document.getElementById("period");
+
+  const amountValue = document.getElementById("amountValue");
+  const interestValue = document.getElementById("interestValue");
+  const periodValue = document.getElementById("periodValue");
+
+  // Live update
+  amountSlider.addEventListener("input", () => {
+    amountValue.textContent = amountSlider.value;
+  });
+
+  interestSlider.addEventListener("input", () => {
+    interestValue.textContent = interestSlider.value + "%";
+  });
+
+  periodSlider.addEventListener("input", () => {
+    periodValue.textContent = periodSlider.value + " Days";
+  });
+
+// faq section
+
+function toggleAnswer(element) {
+    const faq = element.parentElement;
+    faq.classList.toggle("open");
+
+    const icon = element.querySelector(".icon");
+    icon.textContent = faq.classList.contains("open") ? "✖" : "+";
+  }
+
+  </script>
+</body>
+</html>
