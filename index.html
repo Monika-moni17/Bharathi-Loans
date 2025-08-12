@@ -70,13 +70,15 @@
   <!-- Navbar -->
   <header class="navbar">
     <h2 class="logo" id="logo">Bharathi Loans</h2>
+
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">☰</div>
+
     <nav id="nav-links" class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="repay.html">Repay Loan</a>
       <a href="contact.html">Contact Us</a>
     </nav>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   </header>
 
   <!-- Carousel -->
@@ -367,9 +369,21 @@
   <marquee class="marquee">"Beaware of fraud! Always use our secure repayment website link for loan payments. Do not make direct bank payments. BharathiLoans is not responsible for payments made to other accounts.</marquee>
 
   <script>
-    function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("show");
-}
+    
+   const navLink = document.getElementById('nav-links');
+  const menuToggle = document.getElementById('menuToggle');
+
+  function toggleMenu() {
+    navLink.classList.toggle('show');
+  }
+
+  // close menu when clicking outside
+  document.addEventListener('click', function(e){
+    if (!navLink.contains(e.target) && !menuToggle.contains(e.target)) {
+      navLink.classList.remove('show');
+    } 
+  });
+
 
   const navbar = document.querySelector(".navbar");
   const logo = document.getElementById("logo");
