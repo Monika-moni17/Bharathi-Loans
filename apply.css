@@ -632,12 +632,21 @@ footer {
 
 /* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
-  .navbar {
+   .navbar {
+    flex-direction: column;
+    align-items: flex-start;
     padding: 10px;
   }
-
-  .navbar ul li {
-    margin: 5px 0;
+  .nav-items {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .nav-items a {
+    display: block;
+    width: 100%;
   }
 
   .form-section {
