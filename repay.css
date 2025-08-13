@@ -114,14 +114,15 @@ body,html {
     border-color: #66ccff;
     box-shadow: 0 0 10px #66ccff;
 }
+
 .pan-input-container {
     position: relative;
     display: flex;
     align-items: center;
     max-width: 400px;
-    margin: 0 auto;         /* Center horizontally */
-    margin-top: -10px;      /* Moves it upward */
-    margin-bottom: 40px; /* Increased space before footer */  
+    margin: 0 auto;        
+    margin-top: -10px;      
+    margin-bottom: 40px;  
     transform: translateY(-10px); 
     
 }
@@ -141,7 +142,7 @@ body,html {
     left: 10px;
     color: #555;
     font-size: 18px;
-}
+} 
 .otp-btn {
     padding: 10px 16px;
     background-color: #007bff;
@@ -315,34 +316,44 @@ footer {
     .hero p {
         font-size: 1em;
     }
+    .form-section {
+        padding: 20px;
+        text-align: center;
+    }
 
-    /* Form */
     .form-section input {
-        width: 80%;
-    }
-    .pan-input-container {
-        flex-direction: column;
-        transform: none;
-        margin-top: 10px;
-    }
-    .pan-input-container i {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        pointer-events: none;
-    }
-    .pan-input {
-        border-radius: 4px;
-        padding-left: 40px;
-        width: 80%;
-        position: relative;
-    }
-    .otp-btn {
-        border-radius: 4px;
-        width: 80%;
-        margin-top: 10px;
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px;
     }
 
+    .pan-input-container {
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto 20px auto;
+    }
+
+    .icon-left {
+        position: absolute;
+        left: 20px;
+        font-size: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .pan-input {
+        width: 100%;
+        padding: 10px 10px 10px 40px; /* icon space */
+        font-size: 14px;
+    }
+
+    .otp-btn {
+        font-size: 14px;
+        padding: 10px 12px;
+        white-space: nowrap;
+    }
     /* Footer */
     .footer-container {
         flex-direction: column;
