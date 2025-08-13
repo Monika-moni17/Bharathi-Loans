@@ -71,7 +71,7 @@
   <header class="navbar">
     <h2 class="logo" id="logo">Bharathi Loans</h2>
 
-    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">☰</div>
+    <div class="menu-toggle" id="menuToggle">☰</div>
 
     <nav id="nav-links" class="nav-links">
       <a href="index.html">Home</a>
@@ -373,12 +373,16 @@
    const navLink = document.getElementById('nav-links');
   const menuToggle = document.getElementById('menuToggle');
 
-  function toggleMenu() {
+  function toggleMenu(e) {
+    e.stopPropagation();
     navLink.classList.toggle('show');
   }
 
+  menuToggle.addEventListener('click',toggleMenu);
+
   // close menu when clicking outside
-  document.addEventListener('click', function(e){
+    document.addEventListener('click', function(e){
+
     if (!navLink.contains(e.target) && !menuToggle.contains(e.target)) {
       navLink.classList.remove('show');
     } 
@@ -396,7 +400,7 @@
       logo.style.opacity="1";
       logo.style.visibility="visible";
 
-      navLinks.forEach(link => link.style.color = "#0057B8");
+      navLinks.forEach(link => link.style.color = "#003366");
     } else {
       navbar.classList.remove("scrolled");
 

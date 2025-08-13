@@ -676,7 +676,39 @@ footer {
     padding: 15px;
   }
 
-  .rates-fees {
+  /* Table Responsive Container */
+.rates-section table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+/* Wrap table inside a scrollable div */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scroll */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on mobile */
+}
+
+.table-container table {
+  min-width: 600px; /* Keep proper structure on small screens */
+}
+
+/* Optional: Style scrollbar for mobile/desktop */
+.table-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 3px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+  
+  /*.rates-fees {
     flex-direction: column;
   }
 
