@@ -325,10 +325,17 @@ footer {
         transform: none;
         margin-top: 10px;
     }
+    .pan-input-container i {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        pointer-events: none;
+    }
     .pan-input {
         border-radius: 4px;
         padding-left: 40px;
         width: 80%;
+        position: relative;
     }
     .otp-btn {
         border-radius: 4px;
